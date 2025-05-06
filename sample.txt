@@ -1,0 +1,6 @@
+az network public-ip create --resource-group project-setup-2 --name workstation --version IPv4 --sku Basic --allocation-method Dynamic
+
+
+
+
+sample address
