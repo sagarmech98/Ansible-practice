@@ -3,4 +3,16 @@ This file show installation/adding public ip addreess
 az network public-ip create --resource-group project-setup-2 --name workstation --version IPv4 --sku Basic --allocation-method Dynamic
 
 
+Ansible installtion in Ubuntu
+
+   - sudo apt update
+   - sudo apt install software-properties-common -y
+   - sudo add-apt-repository --yes --update ppa:ansible/ansible
+   - sudo apt install ansible -y
+   - ansible --version
+To run:
+ansible-playbook myplaybook.yml
+
+
+
 
