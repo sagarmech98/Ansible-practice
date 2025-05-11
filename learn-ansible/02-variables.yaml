@@ -10,3 +10,20 @@
     - name: print url
       ansible.builtin.debug:
        msg: url - {{ url }} 
+
+# ansible-playbook 02.variables.yaml
+
+
+- name: task level varibales
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print url
+      ansible.builtin.debug:
+       msg: url - {{ url }} 
+      vars: 
+       url: tasklevel.example.com
+
+
+
+# command line can be declared at run like : ansible-playbook 02.variables.yaml -e url=cli_level.exmaple.com
