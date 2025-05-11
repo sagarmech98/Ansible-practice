@@ -27,3 +27,7 @@
 
 
 # command line can be declared at run like : ansible-playbook 02.variables.yaml -e url=cli_level.exmaple.com
+# variable precedence 
+# 1)cli level.
+# 2)task level
+# 3)play level
