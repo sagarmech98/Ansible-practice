@@ -1,1 +1,12 @@
-ss
+# Ansible varibales can declared in many ways
+# can be accessed with {{  }}
+
+- name: play level varibales
+  hosts: localhost
+  connection: local
+  vars: 
+   url: playlevel.example.com
+  tasks:
+    - name: print url
+      ansible.builtin.debug:
+       msg: url - {{ url }} 
