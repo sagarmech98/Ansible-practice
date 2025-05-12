@@ -38,8 +38,8 @@
   connection: local
   vars: 
     x: abc
-    b: 100
-    c: true
+    y: 100
+    z: true
   tasks:
     - name: print url
       ansible.builtin.debug:
@@ -50,7 +50,7 @@
   connection: local
   vars: 
     x: abc
-    b:
+    y:
       - 100
       - 200 
     z:
