@@ -44,3 +44,20 @@
     - name: print url
       ansible.builtin.debug:
        msg: x - {{ x }} ,y - {{ y }} ,z - {{ z }} 
+
+- name:  varibales declaration
+  hosts: localhost
+  connection: local
+  vars: 
+    x: abc
+    b:
+      - 100
+      - 200 
+    z:
+      url: sample
+      domain: example.com
+  tasks:
+    - name: print url
+      ansible.builtin.debug:
+       msg: x - {{ x }} ,y - {{ y }} ,z - {{ z }} 
+
