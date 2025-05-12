@@ -31,3 +31,16 @@
 # 1)cli level.
 # 2)task level
 # 3)play level
+# variable types
+
+- name: types of varibales
+  hosts: localhost
+  connection: local
+  vars: 
+    x: abc
+    b: 100
+    c: true
+  tasks:
+    - name: print url
+      ansible.builtin.debug:
+       msg: x - {{ x }} ,y - {{ y }} ,z - {{ z }} 
