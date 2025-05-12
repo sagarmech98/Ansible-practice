@@ -1,0 +1,5 @@
+- name:  varibales declaration
+  hosts: localhost
+  connection: local
+  roles:
+   -demo
